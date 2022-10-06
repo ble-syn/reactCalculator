@@ -33,10 +33,7 @@ body{
   margin: 10px;
 }
 button {
-  padding: 18px 15px;
-  display: grid;
-  place-items: center;
-  
+  /* padding: 20px 15px; */
   outline: none;
   border-radius: 50px;
   font-weight: 700;

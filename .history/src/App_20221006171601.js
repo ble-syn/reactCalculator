@@ -1,5 +1,6 @@
 import {useState} from "react";
 
+
 function App() {
   const [numDisplay, setNumDisplay] = useState("")
 
@@ -29,7 +30,7 @@ const equals = () => {
           <div class="calculator-keys">
               <button onClick={reset} value=" " class="gray">AC</button> 
               <button onClick={deleteNum} value="" class="gray">Del</button>
-              <button onClick={percent} value="%" class="gray">%</button>
+              <button onClick={numClick} value="%" class="gray">%</button>
               <button onClick={numClick} value="/" class="yellow">/</button>
               <button onClick={numClick} value="9">9</button>
               <button onClick={numClick} value="8">8</button>

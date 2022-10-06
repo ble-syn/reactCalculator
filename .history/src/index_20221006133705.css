@@ -33,12 +33,9 @@ body{
   margin: 10px;
 }
 button {
-  padding: 18px 15px;
-  display: grid;
-  place-items: center;
-  
+  padding: 10px;
   outline: none;
-  border-radius: 50px;
+  border-radius: 50%;
   font-weight: 700;
   border: none;
   color: #fff;

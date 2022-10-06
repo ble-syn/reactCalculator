@@ -1,21 +1,17 @@
 import {useState} from "react";
 
+
 function App() {
-  const [numDisplay, setNumDisplay] = useState("")
+  const [numDisplay, setNumDisplay] = useState("0")
 
 const numClick = (event) => {
       event.preventDefault()
       let value = event.target.value
       setNumDisplay(numDisplay + value)
-}
-const deleteNum = () => {
-  setNumDisplay(numDisplay.slice(0, -1))
+
 }
 const reset = () => {
   setNumDisplay("")
-}
-const percent = () => {
-  setNumDisplay(numDisplay / 100)
 }
 const equals = () => {
   setNumDisplay(eval(numDisplay))
@@ -24,12 +20,12 @@ const equals = () => {
   return (
     <main id="container">
       <div class="calculator">
-          <div><input id="calculator-display" type="text" placeholder="0" value={numDisplay} /></div>
+          <div id="calculator-display">{numDisplay}</div>
 
           <div class="calculator-keys">
               <button onClick={reset} value=" " class="gray">AC</button> 
-              <button onClick={deleteNum} value="" class="gray">Del</button>
-              <button onClick={percent} value="%" class="gray">%</button>
+              <button onClick={numClick} value="-" class="gray">+/-</button>
+              <button onClick={numClick} value="%" class="gray">%</button>
               <button onClick={numClick} value="/" class="yellow">/</button>
               <button onClick={numClick} value="9">9</button>
               <button onClick={numClick} value="8">8</button>
