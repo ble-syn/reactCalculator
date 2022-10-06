@@ -4,7 +4,7 @@ function App() {
   const [numDisplay, setNumDisplay] = useState("")
   const operators = ["+", "-", "*", "/"]
 
-  const numClick = (event) => {
+const numClick = (event) => {
   event.preventDefault()
   if(numDisplay === "0" && event.target.value !== "."){
     return
@@ -12,6 +12,7 @@ function App() {
   if (operators.includes(numDisplay[numDisplay.length - 1]) && operators.includes(event.target.value)) {
     return
   }
+  
   let value = event.target.value
   setNumDisplay(numDisplay + value)
 }

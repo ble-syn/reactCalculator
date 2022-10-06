@@ -30,7 +30,10 @@ body{
   font-size: 28px;
   padding: 50px 10px 20px;
   color: #fff;
-  background-color: #202124;
+  border-radius: 21px;
+background: #202124;
+box-shadow: inset 26px 26px 51px #191a1c,
+            inset -26px -26px 51px #27282c;
 }
 #calculator-display:focus {
   outline: none;

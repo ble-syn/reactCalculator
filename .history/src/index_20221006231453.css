@@ -59,7 +59,7 @@ button {
   -7px -7px 14px #33353a;
 }
 button:focus {
-  background-color: #D1D1D1;
+  background-color: #6f6c6c;
 }
 .zero {
   grid-column: 1/3;

@@ -55,8 +55,8 @@ button {
   font-size: 24px;
   cursor: pointer;
   background: #202124;
-  box-shadow:  7px 7px 14px #0d0d0e,
-  -7px -7px 14px #33353a;
+  box-shadow:  8px 8px 16px #0d0d0e,
+  -8px -8px 16px #33353a;
 }
 button:focus {
   background-color: #D1D1D1;

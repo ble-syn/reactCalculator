@@ -55,8 +55,9 @@ button {
   font-size: 24px;
   cursor: pointer;
   background: #202124;
-  box-shadow:  7px 7px 14px #0d0d0e,
-  -7px -7px 14px #33353a;
+  background: linear-gradient(145deg, #222327, #1d1e20);
+  box-shadow:  20px 20px 50px #0d0d0e,
+  -20px -20px 50px #33353a;
 }
 button:focus {
   background-color: #D1D1D1;
