@@ -33,7 +33,7 @@ const equals = () => {
   return (
     <main id="container">
       <div className="calculator">
-          <div><input id="calculator-display" type="text" placeholder="0" value={numDisplay} /></div>
+          <div><input onChange={(e)=>{setNumDisplay(e.target.value)}} id="calculator-display" type="text" placeholder="0" value={numDisplay} /></div>
 
         <div className="calculator-keys">
 
